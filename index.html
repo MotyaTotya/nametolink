@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="bc">напиши название видео (например baby shark)</h1>
+    <form action="">
+        <input type="text" id="input">
+        <button type="button" onClick="link()" id="tap">tap!</button>
+    </form>
+    <h1 id="name"> ㅤ</h1>
+    <h1 id="reklama">предложить новые ссылки и узнать все названия @asterlove1</h1>
+    <style>
+        body {
+            background-image: url("bg.jpg");
+        }
+
+        #bc {
+            position: absolute;
+            display: block;
+            text-align: center;
+            top: 20%;
+            left: 31.4%;
+        }
+
+        input {
+            position: absolute;
+            left: 35%;
+            top: 30%;
+            font-size: 30px;
+        }
+
+        #tap {
+            position: absolute;
+            left: 56%;
+            top: 30%;
+            font-size: 30px;        }
+        #name{
+            position: absolute;
+            left: 30%;
+            top: 34%;
+        }
+        #reklama{
+            position: absolute;
+            left: 27%;
+            top: 46%;
+        }
+    </style>
+    <script>
+        function link() {
+            let a = document.getElementById("input")
+            let b = a.value;
+            let p = document.getElementById("name")
+            if (b == "baby shark") {
+                b = "https://www.youtube.com/watch?v=XqZsoesa55w"
+            }
+            if (b == "despacito") {
+                b = "https://www.youtube.com/watch?v=kJQP7kiw5Fk"
+            }
+            p.innerHTML = b
+        }
+    </script>
+</body>
+
+</html>
